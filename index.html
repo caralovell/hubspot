@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HubSpot Redirect</title>
+  <script>
+    (function () {
+      var target = "https://app-eu1.hubspot.com/reports-dashboard/146835427/view/111245397";
+
+      try {
+        if (window.top !== window.self) {
+          window.top.location.replace(target);
+        } else {
+          window.location.replace(target);
+        }
+      } catch (e) {
+        window.location.replace(target);
+      }
+    })();
+  </script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  Redirigiendo al panel...
+</body>
+</html>
